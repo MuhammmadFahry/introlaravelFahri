@@ -1,10 +1,11 @@
-@extends('layouts.master')
+<x-main>
+    <x-slot:title>
+        <h1>Data Table</h1>
+    </x-slot:title>
+    <!-- Main content -->
+    <section class="content">
 
-@section('title', 'Data Tables')
-
-@section('content')
-
-
+        <!-- Default box -->
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">DataTable with default features</h3>
@@ -445,11 +446,14 @@
                             <th>Platform(s)</th>
                             <th>Engine version</th>
                             <th>CSS grade</th>
-                   </tr>
+                        </tr>
                     </tfoot>
                 </table>
             </div>
             <!-- /.card-body -->
         </div>
         <!-- /.card -->
-@endsection
+
+    </section>
+    <!-- /.content -->
+</x-main>
